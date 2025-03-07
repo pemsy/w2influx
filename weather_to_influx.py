@@ -7,7 +7,8 @@ import time
 # Konfiguracja OpenWeather API
 API_KEY = os.getenv("OPENWEATHER_API_KEY", "TWOJ_KLUCZ_API")
 CITY = os.getenv("CITY", "Warsaw")
-URL = f"http://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric"
+URL = f"https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&appid={API key}&units=metric"
+
 
 # Konfiguracja InfluxDB
 INFLUX_URL = os.getenv("INFLUX_URL", "http://influxdb:8086")
